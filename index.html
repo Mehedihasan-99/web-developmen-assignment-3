@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- daisy UI + tailwind css  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config ={
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+      <!-- font-awesome cdn  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+
+      <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+      </style>
+
 </head>
-<body>
-    <header></header>
+<body class="font-manrope bg-gray-50">
+    <header class="md:container mx-auto">
+        <!-- nav start here -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold"><i class=" fa-solid fa-arrow-right  bg-lime-300 -rotate-45 text-3xl m-1 px-2 py-1 flex items-center justify-center rounded-full "></i> Rinterio </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class=" flex-row justify-between hidden md:flex lg:flex">
+                    <i class=" fa-solid fa-search  bg-white border text-xl  my-2  size-8 flex items-center justify-center rounded-full "></i>
+                    <i class=" fa-solid fa-cart-shopping   bg-white border  text-xl m-2 size-8 flex items-center justify-center rounded-full "></i>
+                    <a class="btn bg-lime-300">Book Consult <i class=" fa-solid fa-arrow-right  bg-black text-white -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
+                  </div>
+                  <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- navbar end  -->
+        <!-- banner start  -->
+          <div class="flex flex-col justify-center items-center space-y-5">
+            <img class="w-3/4 md:w-1/2" src="./image/banner.png" alt="">
+            <h1 class="font-extrabold text-3xl md:text:4xl lg:text-6xl text-center w-10/12 ">A barn house of this design has a striking appearance</h1>
+            <p class="text-gray-400 font-medium text-sm md:text-base   text-center w-3/4 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="btn bg-lime-200 px-20 md:px-5  text-xl font-bold rounded-full">View Details <i class=" fa-solid fa-arrow-right  bg-lime-300 -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
+          </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
