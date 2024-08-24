@@ -35,13 +35,14 @@
       <style>
         .font-manrope {
             font-family: "Manrope", sans-serif;
+            color: #1C1C1C;
         }
       </style>
 
 </head>
 <body class="font-manrope bg-gray-50">
     <!-- header section start here  -->
-    <header class="md:container mx-auto bg-gradient-to-t from-white to-slate-100">
+    <header class="md:container mx-auto bg-gradient-to-t from-white to-slate-100 lg:pb-12">
         <!-- nav start here -->
         <nav>
             <div class="navbar">
@@ -80,29 +81,28 @@
                 </div>
               </div>
         </nav>
-        <!-- navbar end  -->
         <!-- banner start  -->
-          <div class="flex flex-col justify-center items-center space-y-5 p-5 md:py-10 lg:px-16 lg:py-24">
+        <div class="flex flex-col justify-center items-center space-y-5 p-5 md:py-12 lg:px-10 lg:my-0">
             <img class="w-3/4 md:w-1/2 mx-auto" src="./image/banner.png" alt="">
             <h1 class="font-extrabold text-3xl md:text:4xl lg:text-6xl text-center w-10/12 ">A barn house of this design has a striking appearance</h1>
             <p class="text-gray-400 font-medium text-sm md:text-base   text-center w-3/4 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-            <a class="btn bg-m-greeno5  px-20 md:px-6   text-xl font-bold rounded-full">View Details <i class=" fa-solid fa-arrow-right  bg-m-green -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
-          </div>
+            <a class="btn bg-m-greeno5 w-full md:w-80 text-xl font-bold rounded-full">Send Mail <i class=" fa-solid fa-arrow-right  bg-m-green -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
+        </div>
     </header>
 
     <!-- main section start here  -->
     <main class="md:container mx-auto bg-gray-200">
       <!-- about section  -->
-       <section class="py-6 lg:px-16 ">
-        <div class="hero  min-h-screen">
-          <div class="hero-content flex-col lg:flex-row">
+      <section class="py-6 md:py-12 lg:py-20 lg:mx-16 ">
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row justify-between p-5 md:p-0">
             <!-- content  -->
-            <div class="md:w11/12 lg:w-1/2 mx-auto space-y-4 md:px-10 lg:px-0 relative ">
+            <div class=" lg:w-1/2 mx-auto md:mx-0  lg:px-0 space-y-6 relative ">
               <!-- text  -->
-              <div class=" text-center lg:text-left space-y-4">
+              <div class="text-center lg:text-left space-y-4">
                 <div class="badge p-4 font-bold text-base"><i class=" fa-solid fa-arrow-right m-1 px-2  flex items-center justify-center rounded-full "></i> About Us</div>
                 <h1 class="text-2xl font-bold">We design thoughtful, liveable spaces</h1>
-                <p class="font-medium text-sm">The barn house captivates with its blend of rustic charm and 
+                <p class="md:w-10/12 lg:w-full mx-auto font-medium text-sm">The barn house captivates with its blend of rustic charm and 
                   modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
               </div>
@@ -127,24 +127,24 @@
               </div>
               <div class="absolute -top-20 -left-10 hidden lg:flex"><img src="./image/Vector.png" alt=""></div>
             </div>
-             <!-- image  -->
-             <div class="lg:w-1/2 mx-auto">
+            <!-- image  -->
+            <div class=" md:w-full lg:w-1/2 mx-auto ">
               <img
               src="./image/Rectangle.png" 
               class="w-full" />
             </div>
           </div>
         </div>
-       </section>
+      </section>
 
-       <!-- how we works section  -->
-        <section class="p-5 lg:px-16 mb-10 ">
+      <!-- how we works section  -->
+      <section class="p-5 lg:mx-16 pb-16 ">
           <div class="space-y-6 lg:space-y-8">
             <!-- text  -->
             <div class="text-center space-y-4 my-10">
               <div class="badge p-4 font-bold text-base"><i class=" fa-solid fa-arrow-right m-1 px-2  flex items-center justify-center rounded-full "></i> How we works</div>
               <h1 class=" to-black text-2xl md:text-3xl lg:text-4xl mb-6 font-bold">We design thoughtful, liveable spaces</h1>
-              <p class="font-medium text-sm md:text:base text-gray-500 w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and 
+              <p class="font-medium text-sm md:text:base text-gray-500 md:w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and 
               modern sophistication, featuring weathered wood, sleek metal accents.
               </p>
             </div>
@@ -176,10 +176,10 @@
                </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        <!-- Lets connect section  -->
-         <section class="bg-[url('./image/bg.jpg')] bg-cover bg-no-repeat bg-center  p-5 mb-10 lg:px-16 ">
+      <!-- Lets connect section  -->
+      <section class="bg-[url('./image/bg.jpg')] bg-cover bg-no-repeat bg-center  p-5 mb-10 lg:px-16 ">
           <div class="w-full md:w-10/12 mx-auto lg:w-5/8">
             <!-- text  -->
             <div class="text-center space-y-4 my-10">
@@ -191,21 +191,45 @@
             <!-- input section  -->
             <div class="w-full space-y-4 my-10">
               <div class=" grid grid-cols-1 md:grid-cols-2 gap-5 max-w-full">
-                <input type="text" placeholder="First Name" class="input h-14 md:16 " />
-                <input type="text" placeholder="Last Name" class="input h-14 md:16" />
-                <input type="text" placeholder="Phone Number" class="input h-14 md:16" />
-                <input type="text" placeholder="Email Number" class="input h-14 md:16" />
+                <input type="text" placeholder="First Name*" class="input h-14 md:16 " />
+                <input type="text" placeholder="Last Name*" class="input h-14 md:16" />
+                <input type="text" placeholder="Phone Number*" class="input h-14 md:16" />
+                <input type="text" placeholder="Email Number*" class="input h-14 md:16" />
               </div>
               <div class="w-full">
-                <textarea class="textarea w-full h-48 " placeholder="Bio"></textarea>
+                <textarea class="textarea w-full h-48 " placeholder="Write your message here"></textarea>
               </div>
-              <div>
-                <a class="btn btn-block bg-m-greeno5  px-20 md:px-6   text-xl font-bold rounded-full">View Details <i class=" fa-solid fa-arrow-right  bg-m-green -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
-              </div>
-             </div> 
+              <a class="btn bg-m-greeno5 w-full text-xl font-bold rounded-full">Send Mail <i class=" fa-solid fa-arrow-right  bg-m-green -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i>
+              </a>
+            </div> 
           </div>
-         </section>
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- footer section  -->
+    <footer class="bg-black flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-10 py-20">
+      <div class="flex flex-col justify-center items-center gap-2 w-11/12 md:w-10/12 lg:w-1/2">
+        <div class="flex justify-center items-center">
+          <i class=" fa-solid fa-arrow-right  bg-m-green -rotate-45 text-xm m-1 p-2 lg:p-3 rounded-full "></i>
+          <a class="text-3xl text-white font-extrabold"> Rinterio </a>
+        </div>
+        <p class="font-medium text-base text-gray-500 text-center">The barn house captivates with its blend of rustic charm and 
+          modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <div class="w-11/12 md:w-10/12 lg:w-7/12">
+        <ul class="menu menu-horizontal p-0 flex flex-col md:flex-row items-center  md:justify-between text-gray-500">
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Home</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="w-11/12 md:w-52">
+        <a class="btn border-none bg-m-green w-full   text-xl font-bold rounded-full">Book Consult  
+          <i class=" fa-solid fa-arrow-right  bg-black text-white -rotate-45 text-sm m-1 px-2 py-1 flex items-center justify-center rounded-full "></i></a>
+      </div>
+    </footer>
 </body>
 </html>
